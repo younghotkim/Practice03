@@ -13,11 +13,9 @@ public class Ex20 {
 		Scanner sc = new Scanner(System.in);
 		
 		
-		
+		int set = (int)(Math.random()*100)+1;
 		
 		while (true) {
-			
-			int set=72;
 			
 			System.out.print(">>");
 			int num = sc.nextInt();sc.nextLine();
@@ -33,6 +31,8 @@ public class Ex20 {
 			else {
 				System.out.println("맞았습니다.");
 				
+				set = (int)(Math.random()*100)+1;
+				
 				System.out.print("게임을 종료하시겠습니까?(y/n) >>");
 				
 				String answer = sc.nextLine();
@@ -40,6 +40,7 @@ public class Ex20 {
 				if ( answer == "n") {
 					
 					System.out.println("");
+					
 				}
 				
 				else if ( answer.equals("y") ) {
